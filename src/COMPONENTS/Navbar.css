@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: slategrey;
+}
+
+nav svg {
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav .section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .searchbar {
+    display: flex;
+    border: none;
+    box-shadow: darkolivegreen;
+    border-radius: 5px;
+    overflow: hidden;
+    padding:5px;
+    justify-content: space-between;
+}
