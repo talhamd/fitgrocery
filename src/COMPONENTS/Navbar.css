@@ -2,15 +2,18 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    box-shadow: slategrey;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav svg {
-    width: 25%;
-    height: 25%;
+    width: 25px;
+        height: 25px;
     cursor: pointer;
 }
 
+nav svg:hover {
+    color: var(--color1);
+}
 nav img {
     width: 150px;
 }
@@ -25,9 +28,68 @@ nav .section1 {
 nav .searchbar {
     display: flex;
     border: none;
-    box-shadow: darkolivegreen;
     border-radius: 5px;
     overflow: hidden;
     padding:5px;
     justify-content: space-between;
-}
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+    }
+    
+    nav .searchbar input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    nav .searchbar button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    
+    }
+    
+    nav .section1 .righticons {
+        display: flex;
+        gap: 10 px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav .searchbar svg:hover {
+        background-color: var(--color1);
+        color: white;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    
+    nav .cart {
+        position: relative;
+        margin: 0px 20px;
+    }
+    
+    nav .cart .quantity {
+        background-color: var(--color1);
+        color: black;
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        top: -15px;
+        right: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    
+    }
+    
+    nav .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 3%;
+    }

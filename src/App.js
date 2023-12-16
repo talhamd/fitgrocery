@@ -2,10 +2,12 @@ import React from 'react';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import Home from './PAGES/HOME/Home';
 import Contact from './PAGES/HOME/Contact';
+import './App.css';
 
 
 const App = () => {
   return (
+  
     <BrowserRouter>
     <Routes>
       <Route path='/' element = {<Home/>}/>
@@ -16,6 +18,7 @@ const App = () => {
       </div>} />
     </Routes>
     </BrowserRouter>
+   
  
   )
 }
