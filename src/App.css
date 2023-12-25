@@ -1,7 +1,7 @@
 :root {
-    --color1: green;
-    --color2: red;
-    --color3: rgb(54, 15, 224);
+    --col1: green;
+    --col2: red;
+    --col3: rgb(54, 15, 224);
 }
 
 * {

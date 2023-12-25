@@ -12,7 +12,7 @@ nav svg {
 }
 
 nav svg:hover {
-    color: var(--color1);
+    color: var(--col1);
 }
 nav img {
     width: 150px;
@@ -58,7 +58,7 @@ nav .searchbar {
     }
     
     nav .searchbar svg:hover {
-        background-color: var(--color1);
+        background-color: var(--col1);
         color: white;
         border-radius: 50%;
         padding: 5px;
@@ -70,7 +70,7 @@ nav .searchbar {
     }
     
     nav .cart .quantity {
-        background-color: var(--color1);
+        background-color: var(--col1);
         color: black;
         position: absolute;
         border-radius: 50%;
