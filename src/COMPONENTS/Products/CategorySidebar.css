@@ -1,16 +1,25 @@
-.category .vegetable {
+.categorysidebar {
     display: flex;
-    width: 20vh;
-    height: 20vh;
-}
-.category .fruits {
+    width: 20%;
+        flex-direction: column;
+    }
+.category {
     display: flex;
-    width: 20vh;
-    height: 20vh;
-}
-
-.category .vegetable . {
-    display: flex;
-    width: 20vh;
-    height: 20vh;
+    border: 1px solid #c6a5a5;
+        align-items: center;
+        padding: 10px 20px;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .category img {
+        height: 40px;
+        width: 40px;
+    }
+                .category h3 {
+                    font-size: 18px
+                }
+        
+                .category:hover {
+                    background-color: rgb(210, 250, 179);
 }

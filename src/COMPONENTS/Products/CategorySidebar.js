@@ -1,23 +1,50 @@
 import React from 'react'
 import img1 from '../../ASSETS/Images/vegImage.jpeg'
 import img2 from '../../ASSETS/Images/fruitImage.jpeg'
+import img3 from '../../ASSETS/Images/dairyproducts.jpeg'
 import './CategorySidebar.css'
 
 const CategorySidebar = () => {
+    const data = [
+        {
+            id:1,
+            image: img1,
+            categoryName: "vegetable"
+        },
+        {
+            id:2,
+            image: img2,
+            categoryName: "Fruits"
+        },
+        {
+            id:3,
+            image: img3,
+            categoryName: "Dairy Products"
+        },
+        {
+            id:4,
+            image: img1,
+            categoryName: "Green veggies"
+        },
+        {
+            id:5,
+            image: img2,
+            categoryName: "Dry fruits"
+        }
+    ]
   return (
-    <div>
-        <div className='category'>
-            <div className='vegetable'>
-                <img src = {img1} alt='vegimage'/>
-                <h2>vegetable</h2>
-                <p>Explore More Items</p>
-            </div>
-            <div className='fruits'>
-                <img src = {img2} alt='fruitimage'/>
-                <h2>vegetable</h2>
-                <p>Explore More Items</p>
-            </div>
-        </div>
+    <div className='categorysidebar'>
+       {
+        data.map((item) => {
+            return(
+                <div className='category'>
+                <img src={item.image} alt='categoryimage'/>
+                <h3>{item.categoryName}</h3>
+                </div>
+            )
+        }
+        )
+       }
     </div>
   )
 }
